@@ -355,7 +355,6 @@ li {
   }
 }
 #navigation #main-nav .main-link.dropit-trigger:hover {
-  border-bottom: 2px solid #ff6600;
   margin-bottom: -2px;
   z-index: 100;
 }
