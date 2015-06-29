@@ -28,9 +28,16 @@ $(document).ready(function() {
     }, 'xml');
   });
 
-  // Drop it menu
-  $('#main-nav').dropit({
-    action: 'mouseenter'
-  })
+  // Drop it menu, use click on mobile, hover on dekstop
+  if ($(window).width() < 960) {
+    $('#main-nav').dropit({
+      action: 'click'
+    })
+  }
+  else {
+    $('#main-nav').dropit({
+      action: 'mouseenter'
+    })
+  }
 
 });
